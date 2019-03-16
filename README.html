@@ -1,0 +1,99 @@
+<h1>html-editor</h1>
+<script async="async" type="text/javascript" src="//static.h-bid.com/w3schools.com/20190110/snhb-w3schools.min.js"></script>
+<script type='text/javascript'>
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+gads.src = 'https://www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+var snhb = snhb || {}; snhb.queue = snhb.queue || [];
+snhb.options = {
+               logOutputEnabled : false,
+               autoStartAuction: false,
+               gdpr: {
+                     mainGeo: "us",
+                     reconsiderationAppealIntervalSeconds:0
+                     }
+               };
+               
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+googletag.pubads().disableInitialLoad();               
+googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+  // Mobile ad
+  addSize([0, 0], [320, 50]). 
+  // Vertical Tablet ad
+  addSize([468, 0], [468, 60]). 
+  // Horizontal Tablet
+  addSize([728, 0], [728, 90]).
+  // Desktop and bigger ad
+  addSize([970, 0], [[728, 90], [970, 90]]).build();
+  // addSize([970, 0], [728, 90]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1428407818244-0').
+  // gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [728, 90], 'div-gpt-ad-1428407818244-0').
+  defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content","try" + (function () {
+    var folder = location.pathname;
+    folder = folder.replace("/", "");
+    folder = folder.substr(0, folder.indexOf("/"));
+    return folder;
+  })()
+  );
+  snhb.queue.push(function(){
+    
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
+    
+  });
+googletag.enableServices();
+});
+</script> 
+
+	<footer>
+	 <div id='div-gpt-ad-1428407818244-0' >
+    <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428407818244-0'); });</script>
+  </div>
+	<div id="el-2978435" class="element customHTML-element  " > <div class="js-gads">
+  <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-8611658640634958";
+    if (window.innerWidth <= 350) {
+      google_ad_slot = "4866567429";
+      google_ad_width = 320;
+      google_ad_height = 50;
+    } else if (window.innerWidth >= 750) {
+      google_ad_slot = "2401135947";
+      google_ad_width = 728;
+      google_ad_height = 90;
+    } else {
+      google_ad_slot = "9441222676";
+      google_ad_width = 468;
+      google_ad_height = 60;
+    }
+  //--></script>
+  <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+	    <div id="footer-body" class="section">
+	    	<div class="container">
+	        	<div id="footer-wrapper" class="container-wrapper">
+					<div id="el-2852819" class="element customHTML-element  " > <div class="carbonad">
+        <div id="azcarbon"></div>
+        <script type="text/javascript">
+        var z = document.createElement("script");
+        z.type = "text/javascript";
+        z.async = true;
+        z.src = "http://engine.carbonads.com/z/51625/azcarbon_2_1_0_HORIZ";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(z, s);
+        </script>
+    </div> </div>
+		    </div>
+			
+		</div>
+		
+	</footer>
